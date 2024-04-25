@@ -162,60 +162,42 @@ public class UnetServerStarter : MonoBehaviour
         if (IsStartingEditorServer && AutoJoinRoom)
         {
             //-------------------------
-            // 1. Log into the server, if required.
-            if (!Msf.Client.Auth.IsLoggedIn)
+            // 1. Log into the server
+            Logger.Debug("Logging in as guest...");
+            Msf.Client.Auth.LogInAsGuest((accInfo, loginError) =>
             {
-                Logger.Debug("Logging in as guest...");
-                Msf.Client.Auth.LogInAsGuest((accInfo, loginError) =>
+                if (accInfo == null)
                 {
-                    if (accInfo == null)
+                    Logger.Error("Failed to log in: " + loginError);
+                    return;
+                }
+
+                Logger.Debug("Logged in successfully");
+
+                //-------------------------
+                // 2. Get access to join the room
+                Logger.Debug("Retrieving room access ...");
+                Msf.Client.Rooms.GetAccess(controller.RoomId, (access, accessError) =>
+                {
+                    if (access == null)
                     {
-                        Logger.Error("Failed to log in: " + loginError);
+                        Logger.Error("Failed to get the access to server: " + accessError);
                         return;
                     }
 
-                    Logger.Debug("Logged in successfully");
+                    // We have the access, try to connect to room
+                    Logger.Debug("Access received: " + access);
 
-                    //-------------------------
-                    // 2. Get access to join the room
-                    JoinRoom(controller);
+                    if (RoomConnector.Instance == null)
+                    {
+                        Logger.Warn("RoomConnector was not found in the scene. Hopefully, " +
+                                    "you handle the  'Msf.Client.Rooms.AccessReceived' " +
+                                    "event manually.");
+                    }
+
                 });
-            }
-            else
-            {
-                //-------------------------
-                // 2. Get access to join the room
-                JoinRoom(controller);
-            }
-
+            });
         }
-    }
-
-    /// <summary>
-    /// Requests access to the specified room.
-    /// </summary>
-    /// <param name="controller"></param>
-    protected virtual void JoinRoom(RoomController controller)
-    {
-        Logger.Debug("Retrieving room access ...");
-        Msf.Client.Rooms.GetAccess(controller.RoomId, (access, accessError) =>
-        {
-            if (access == null)
-            {
-                Logger.Error("Failed to get the access to server: " + accessError);
-                return;
-            }
-
-            // We have the access, try to connect to room
-            Logger.Debug("Access received: " + access);
-
-            if (RoomConnector.Instance == null)
-            {
-                Logger.Warn("RoomConnector was not found in the scene. Hopefully, " +
-                            "you handle the  'Msf.Client.Rooms.AccessReceived' " +
-                            "event manually.");
-            }
-        });
     }
 
     protected virtual IClientSocket GetConnection()

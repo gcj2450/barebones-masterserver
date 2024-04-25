@@ -4,7 +4,7 @@
 * Added protected methods to trigger events in AuthModule
 * Elevated `AuthModule.IsLoggedIn` to protected
 * Fixed passwords in spawned rooms
-
+* Async interface for interactions with Database (with implementations for MySQL / PostgreSQL / Mongo / LiteDB)
 
 -----------------------------------------
 ------- Version: V2.0.3 (Micro update)

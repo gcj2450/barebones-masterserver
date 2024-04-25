@@ -24,13 +24,13 @@ namespace Barebones.MasterServer
         {
             Msf.Client.Auth.LoggedIn += OnLoggedIn;
 
-            Email = Email ?? transform.FindChild("Email").GetComponent<InputField>();
-            ErrorText = ErrorText ?? transform.FindChild("Error").GetComponent<Text>();
-            GuestNotice = GuestNotice ?? transform.FindChild("GuestNotice").GetComponent<Text>();
-            RegisterButton = RegisterButton ?? transform.FindChild("Button").GetComponent<Button>();
-            Password = Password ?? transform.FindChild("Password").GetComponent<InputField>();
-            RepeatPassword = RepeatPassword ?? transform.FindChild("RepeatPassword").GetComponent<InputField>();
-            Username = Username ?? transform.FindChild("Username").GetComponent<InputField>();
+            Email = Email ?? transform.Find("Email").GetComponent<InputField>();
+            ErrorText = ErrorText ?? transform.Find("Error").GetComponent<Text>();
+            GuestNotice = GuestNotice ?? transform.Find("GuestNotice").GetComponent<Text>();
+            RegisterButton = RegisterButton ?? transform.Find("Button").GetComponent<Button>();
+            Password = Password ?? transform.Find("Password").GetComponent<InputField>();
+            RepeatPassword = RepeatPassword ?? transform.Find("RepeatPassword").GetComponent<InputField>();
+            Username = Username ?? transform.Find("Username").GetComponent<InputField>();
 
             ErrorText.gameObject.SetActive(false);
         }

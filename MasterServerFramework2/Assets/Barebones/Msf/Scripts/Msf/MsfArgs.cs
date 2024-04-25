@@ -21,7 +21,7 @@ namespace Barebones.MasterServer
 
             StartMaster = IsProvided(Names.StartMaster);
             MasterPort = ExtractValueInt(Names.MasterPort, 5000);
-            MasterIp = ExtractValue(Names.MasterIp);
+            MasterIp = ExtractValue(Names.MasterIp,"127.0.0.1");
             MachineIp = ExtractValue(Names.MachineIp);
             DestroyUi = IsProvided(Names.DestroyUi);
 

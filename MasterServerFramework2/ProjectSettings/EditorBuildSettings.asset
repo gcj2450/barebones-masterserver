@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Matchmaking/Demo/Scenes/MainScene.unity
+    guid: fc6d0ebab03e6aa4aa5533310430ff0a
+  - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-SelectScene.unity
+    guid: 44c9b47c207afeb4ba10f6ce1187ba5e
   - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-Master+Spawner.unity
+    guid: d0d717a57b14b2647b7ef95eac21f603
   - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-Client.unity
+    guid: 9a0317daf149ac745b747e20cdbb15a2
   - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-GameRoom.unity
+    guid: 4242bc0756799ee4f887ae30768a4959
   - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-Spawner.unity
+    guid: 1e8c8c77266137d44ad15e3fd5e7564c
+  m_configObjects: {}

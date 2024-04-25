@@ -20,11 +20,11 @@ namespace Barebones.MasterServer
 
         protected virtual void Awake()
         {
-            ErrorText = ErrorText ?? transform.FindChild("Error").GetComponent<Text>();
-            LoginButton = LoginButton ?? transform.FindChild("Button").GetComponent<Button>();
-            Password = Password ?? transform.FindChild("Password").GetComponent<InputField>();
-            Remember = Remember ?? transform.FindChild("Remember").GetComponent<Toggle>();
-            Username = Username ?? transform.FindChild("Username").GetComponent<InputField>();
+            ErrorText = ErrorText ?? transform.Find("Error").GetComponent<Text>();
+            LoginButton = LoginButton ?? transform.Find("Button").GetComponent<Button>();
+            Password = Password ?? transform.Find("Password").GetComponent<InputField>();
+            Remember = Remember ?? transform.Find("Remember").GetComponent<Toggle>();
+            Username = Username ?? transform.Find("Username").GetComponent<InputField>();
 
             if (PasswordResetWindow == null)
             {

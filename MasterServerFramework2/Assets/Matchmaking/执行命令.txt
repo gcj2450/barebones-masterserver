@@ -1,0 +1,13 @@
+﻿matchmaking为打包出的exe名称
+MatchMaking -msfStartMaster
+
+MatchMaking -client
+
+MatchMaking -msfSpawnId 0
+
+//最终命令
+Start Server：
+MatchMaking -msfStartMaster -msfStartSpawner
+
+//启动客户端
+MatchMaking -client

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Barebones.MasterServer
 {
+    /// <summary>
+    /// 服务器模块接口
+    /// </summary>
     public interface IServerModule
     {
         IEnumerable<Type> Dependencies { get; }

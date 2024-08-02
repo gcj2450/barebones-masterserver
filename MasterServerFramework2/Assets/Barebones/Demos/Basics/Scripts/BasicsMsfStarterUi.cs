@@ -24,6 +24,9 @@ public class BasicsMsfStarterUi : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// 启动MasterServer
+    /// </summary>
     public void OnStartMasterClick()
     {
         var master = FindObjectOfType<MasterServerBehaviour>();

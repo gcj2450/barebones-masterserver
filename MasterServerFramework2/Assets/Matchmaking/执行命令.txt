@@ -11,3 +11,6 @@ MatchMaking -msfStartMaster -msfStartSpawner
 
 //启动客户端
 MatchMaking -client
+
+//Server.exe路径要设置为完整路径
+D:/GitHub/NodeJS/barebones-masterserver/barebones-masterserver/MasterServerFramework2/Build/GameServer.exe

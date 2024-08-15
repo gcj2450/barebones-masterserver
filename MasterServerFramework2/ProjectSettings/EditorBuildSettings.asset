@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-Spawner.unity
     guid: 1e8c8c77266137d44ad15e3fd5e7564c
+  - enabled: 1
+    path: Assets/Barebones/Demos/WorldsDemo/Scenes/WorldDemo-LoadingScene.unity
+    guid: d6e1dc4f087d9a94ea6c6c6b7d118f7f
+  - enabled: 1
+    path: Assets/Barebones/Demos/WorldsDemo/Scenes/WorldDemo-MainScene.unity
+    guid: 498549daf179fa441b61ce7d49ec2e31
+  - enabled: 1
+    path: Assets/Barebones/Demos/WorldsDemo/Scenes/WorldDemo-ZoneMain.unity
+    guid: b9b43c48024ef814eb1a4b7c94a71e85
+  - enabled: 1
+    path: Assets/Barebones/Demos/WorldsDemo/Scenes/WorldDemo-ZoneSecondary.unity
+    guid: b0117129ff41126499b3bf1223f1de43
   m_configObjects: {}

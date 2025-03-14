@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Networking.NetworkSystem;
 
 namespace Barebones.MasterServer
 {

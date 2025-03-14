@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Barebones.MasterServer
 {
     /// <summary>
-    /// Automatically connects to master server
+    /// 根据设置或者读取的命令行参数masterIp和port连接到Master
     /// </summary>
     public class ConnectionToMaster : MonoBehaviour
     {

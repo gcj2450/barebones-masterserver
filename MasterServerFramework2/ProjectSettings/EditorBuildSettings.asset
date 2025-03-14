@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Matchmaking/Demo/Scenes/MainScene.unity
-    guid: fc6d0ebab03e6aa4aa5533310430ff0a
-  - enabled: 1
     path: Assets/Barebones/Demos/RoomsDemo/Scenes/Demo-SelectScene.unity
     guid: 44c9b47c207afeb4ba10f6ce1187ba5e
   - enabled: 1
@@ -35,4 +32,50 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Barebones/Demos/WorldsDemo/Scenes/WorldDemo-ZoneSecondary.unity
     guid: b0117129ff41126499b3bf1223f1de43
+  - enabled: 1
+    path: Assets/Barebones/Demos/Basics/Scenes/Basics-1. Master And Client.unity
+    guid: 691475f344571bc4b9610d391bcbf9cc
+  - enabled: 1
+    path: Assets/Barebones/Demos/Basics/Scenes/Basics-2. Master And Spawner.unity
+    guid: 9db3c4ef63de0b74283215ff60257d44
+  - enabled: 1
+    path: Assets/Matchmaking/Demo/Scenes/MainScene.unity
+    guid: fc6d0ebab03e6aa4aa5533310430ff0a
+  - enabled: 1
+    path: Assets/Barebones/Demos/Basics/Scenes/Basics-3. Starting Automatically In
+      Editor.unity
+    guid: 83ac86875a7e62e46bcd0a4f81e9994f
+  - enabled: 1
+    path: Assets/Development/ChatTest.unity
+    guid: 9119b0cdf4ae7f14fb26d5616a01187c
+  - enabled: 1
+    path: Assets/Barebones/Demos/QuickSetup/Scenes/Client.unity
+    guid: 0e99fe7772e673c45bf62f6c82edbd4c
+  - enabled: 1
+    path: Assets/Barebones/Contributions/EmilsConnectionTest/EmilsConnectionTest.unity
+    guid: fa7dee9ea7a59704dbabe72e1307d1a7
+  - enabled: 1
+    path: Assets/Barebones/Demos/QuickSetup/Scenes/GameServer.unity
+    guid: 28bcb8a7e79a65047b1d9a30c31f66ae
+  - enabled: 1
+    path: Assets/Development/LobbyTestScene.unity
+    guid: e7b06a00f43be8c479147ceeb90d7817
+  - enabled: 1
+    path: Assets/Barebones/Demos/QuickSetup/Scenes/MasterAndSpawner.unity
+    guid: 75f0efbfccb462d459827cda4e9473ec
+  - enabled: 1
+    path: Assets/Barebones/Demos/MiniGame/Scenes/MiniGame.unity
+    guid: e2fa57510e0a5a34f8f382167d9608fd
+  - enabled: 1
+    path: Assets/Development/ProfilesTestScene.unity
+    guid: 364320de47bf3db4d8f83a7cf12a4f31
+  - enabled: 1
+    path: Assets/Barebones/Demos/QuickSetup/Scenes/GameLevels/SimplePlatform.unity
+    guid: 6655c0ba684763e4a935542b62985ac2
+  - enabled: 1
+    path: Assets/MsfWikiExamples/Testing.unity
+    guid: e296c107dd9d0b84398d86dea0040ab3
+  - enabled: 1
+    path: Assets/MsfWikiExamples/ForTutorial/UnetGame.unity
+    guid: 6c3a1e729587c8e4eaab6ff024b4236b
   m_configObjects: {}

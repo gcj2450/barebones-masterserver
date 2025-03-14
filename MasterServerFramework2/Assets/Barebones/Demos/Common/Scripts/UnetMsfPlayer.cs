@@ -2,7 +2,6 @@
 using Barebones.MasterServer;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.Networking.NetworkSystem;
 
 public class UnetMsfPlayer
 {

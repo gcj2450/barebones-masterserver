@@ -4,6 +4,9 @@ using Barebones.MasterServer;
 using Barebones.Networking;
 using UnityEngine;
 
+/// <summary>
+/// Demo script for construct player profiles on master server
+/// </summary>
 public class DemoPlayerProfiles : ServerModuleBehaviour
 {
     public const int CoinsKey = 777;
